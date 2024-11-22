@@ -1,26 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] protected GameObject mapa;
-    [SerializeField] protected GameObject[] todosBotoes;
+    //[SerializeField] protected GameObject mapa;
+    //[SerializeField] protected GameObject[] todosBotoes;
     //[SerializeField] protected GameObject todasCenas;
+    //[SerializeField] protected GameObject[] icones;
     [SerializeField] protected GameObject[] cenas;
-    [SerializeField] protected GameObject[] icones;
-    protected GameObject cenaAtual;
     public bool mapaAberto;
+    protected GameObject cenaAtual;
     public bool podeMover;
     public bool conversaAtiva;
 
     public int historia;
 
     [SerializeField] Animator papel;
-    
+    [SerializeField] Animator fadeOut;
+
+    [SerializeField] GameObject cenaInicialAgencia;
+    [SerializeField] GameObject cenaInicialCidade;
+    [SerializeField] GameObject proxObjetivo;
 
 
     public static GameManager instance;
@@ -36,12 +39,21 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
         historia = 0;
+        
+        /*foreach (GameObject obj in cenas)
+        {
+            obj.SetActive(false);
+        }
+        cenaInicialAgencia.SetActive(true);
+        cenaInicialCidade.SetActive(true);*/
     }
 
     public void AvançaHist()
     {
         historia++;
     }
+
+    
     
 
     protected void Update()
@@ -53,7 +65,7 @@ public class GameManager : MonoBehaviour
 
     void LocalizaçãoNoMapa()
     {
-        if (mapaAberto == true)
+        /*if (mapaAberto == true)
         {
             for (int i = 0; i < cenas.Length; i++)
             {
@@ -67,7 +79,7 @@ public class GameManager : MonoBehaviour
                 }
 
             }
-        }
+        }*/
     }
 
     void PegarItem()
@@ -86,17 +98,23 @@ public class GameManager : MonoBehaviour
         papel.SetTrigger("Desativar");
         //papel.SetBool("Levantado", false);
     }
+
+    public void FadeOut()
+    {
+        fadeOut.SetTrigger("Fade");
+    }
+
     #endregion
 
     protected void Start()
     {
         podeMover = true;
-        mapa.SetActive(false);
+        //mapa.SetActive(false);
     }
 
     protected void Mapa()
     {
-        if (mapa.activeSelf == true)
+        /*if (mapa.activeSelf == true)
         {
             mapaAberto = true;
         }
@@ -142,7 +160,7 @@ public class GameManager : MonoBehaviour
                 }
 
             }
-        }
+        }*/
         
     }
 

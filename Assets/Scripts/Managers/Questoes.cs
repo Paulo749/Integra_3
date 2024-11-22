@@ -30,6 +30,11 @@ public class Questoes : MonoBehaviour
         {
             obj.SetActive(false);
         }
+       
+    }
+
+    public void ComeçaQuiz()
+    {
         questoes[questaoAtual].SetActive(true);
     }
 

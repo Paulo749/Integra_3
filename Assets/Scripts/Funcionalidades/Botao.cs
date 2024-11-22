@@ -28,7 +28,7 @@ public class Botao : MonoBehaviour
                 obj.SetActive(false);
                 liberar.SetActive(true);
                 anim.SetTrigger("Glow");
-                //GameManager.instance.AvançaHist();
+                
             }
             else if (gameObject.CompareTag("Certa"))
             {
@@ -39,10 +39,17 @@ public class Botao : MonoBehaviour
             {
                 GameManager.instance.AbaixaPapel();
             }
+            else if (gameObject.CompareTag("ComeçaQuiz"))
+            {
+                gameObject.SetActive(false);
+                Questoes.instance.ComeçaQuiz();
+            }
             else if (!gameObject.CompareTag("Certa"))
             {
                 Questoes.instance.MudaQuestao();
             }
+
+            
         }
         
         

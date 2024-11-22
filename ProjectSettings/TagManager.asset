@@ -11,6 +11,7 @@ TagManager:
   - Constroi
   - Errada
   - Papel
+  - "Come\xE7aQuiz"
   layers:
   - Default
   - TransparentFX

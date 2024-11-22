@@ -12,7 +12,7 @@ public class NPC : MonoBehaviour
     public NPCConversation minhaConversa;
     public Collider2D Collider;
     [SerializeField]protected GameObject conversa;
-
+    [SerializeField] protected GameObject proxObjetivo;
 
 
     private void Start()
@@ -25,6 +25,20 @@ public class NPC : MonoBehaviour
         
     }
 
+    public void AtivaProxObjetivo()
+    {
+        proxObjetivo.SetActive(true);
+    }
+
+    public void AtivaSumir()
+    {
+        Invoke(nameof(Sumir), 0.6f);
+    }
+
+    public void Sumir()
+    {
+        gameObject.SetActive(false);
+    }
 
     protected void OnMouseOver()
     {
