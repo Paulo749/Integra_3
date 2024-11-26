@@ -40,15 +40,15 @@ public class GameManager : MonoBehaviour
         instance = this;
         historia = 0;
         
-        /*foreach (GameObject obj in cenas)
+        foreach (GameObject obj in cenas)
         {
             obj.SetActive(false);
         }
         cenaInicialAgencia.SetActive(true);
-        cenaInicialCidade.SetActive(true);*/
+        cenaInicialCidade.SetActive(true);
     }
 
-    public void AvançaHist()
+    public void AvancaHist()
     {
         historia++;
     }
@@ -59,11 +59,11 @@ public class GameManager : MonoBehaviour
     protected void Update()
     {
         Mapa();
-        LocalizaçãoNoMapa();
+        LocalizacaoNoMapa();
         
     }
 
-    void LocalizaçãoNoMapa()
+    void LocalizacaoNoMapa()
     {
         /*if (mapaAberto == true)
         {
@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
     {
 
     }
-    #region animaçao
+    #region animacao
     public void LevantaPapel()
     {
         papel.SetTrigger("Ativar");

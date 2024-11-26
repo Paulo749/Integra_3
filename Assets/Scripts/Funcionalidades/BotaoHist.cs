@@ -11,7 +11,7 @@ public class BotaoHist : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            GameManager.instance.AvançaHist();
+            GameManager.instance.AvancaHist();
         }
     }
 
