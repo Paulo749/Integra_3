@@ -30,6 +30,9 @@ public class NPC : MonoBehaviour
         proxObjetivo.SetActive(true);
     }
 
+    
+
+
     public void AtivaSumir()
     {
         Invoke(nameof(Sumir), 0.6f);

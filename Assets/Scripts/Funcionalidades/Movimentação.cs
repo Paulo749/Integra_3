@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 using UnityEngine.U2D;
 using UnityEngine.UI;
 
+
 public class Movimentação : MonoBehaviour
 {
     [SerializeField] protected GameObject cenaAlvo;
     [SerializeField] protected GameObject cenaAtual;
-    //[SerializeField] protected GameObject[] botoesAtuais;
-    //[SerializeField] protected GameObject[] botoesNovos;
+    
 
     [SerializeField] protected SpriteRenderer imagem;
 

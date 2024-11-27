@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject cenaInicialAgencia;
     [SerializeField] GameObject cenaInicialCidade;
-    [SerializeField] GameObject proxObjetivo;
+    //[SerializeField] GameObject proxObjetivo;
 
 
     public static GameManager instance;
