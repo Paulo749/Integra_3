@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject cenaInicialAgencia;
     [SerializeField] GameObject cenaInicialCidade;
+    [SerializeField] GameObject[] papelTxt;
     //[SerializeField] GameObject proxObjetivo;
 
 
@@ -53,7 +54,13 @@ public class GameManager : MonoBehaviour
         historia++;
     }
 
-    
+    public void PadraoTxt()
+    {
+        foreach(GameObject obj in papelTxt)
+        {
+            obj.SetActive(false);
+        }
+    }
     
 
     protected void Update()

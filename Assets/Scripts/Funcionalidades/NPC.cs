@@ -20,7 +20,10 @@ public class NPC : MonoBehaviour
         if (conversa.CompareTag("ConversaInicial"))
         {
             ConversationManager.Instance.StartConversation(minhaConversa);
-            
+            Collider.enabled = false;
+            GameManager.instance.podeMover = false;
+            GameManager.instance.conversaAtiva = true;
+
         }
         
     }
