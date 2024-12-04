@@ -53,7 +53,7 @@ public class Movimentação : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 MudaCena();
-
+                Debug.Log("Cliquei");
             }
         }
            

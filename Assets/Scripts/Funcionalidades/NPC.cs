@@ -13,6 +13,7 @@ public class NPC : MonoBehaviour
     public Collider2D Collider;
     [SerializeField]protected GameObject conversa;
     [SerializeField] protected GameObject proxObjetivo;
+    [SerializeField] protected float tempFade;
 
 
     private void Start()
@@ -38,7 +39,7 @@ public class NPC : MonoBehaviour
 
     public void AtivaSumir()
     {
-        Invoke(nameof(Sumir), 0.6f);
+        Invoke(nameof(Sumir), tempFade);
     }
 
     public void Sumir()

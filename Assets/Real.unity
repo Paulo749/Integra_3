@@ -1426,7 +1426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &66890420
 Transform:
   m_ObjectHideFlags: 0
@@ -3122,8 +3122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 2
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":327,"yPos":160},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Entrar.","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":323.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Voce
+  CurrentIDCounter: 3
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":330.5,"yPos":160},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Entrar.","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":327,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Voce
     se encontra em frente a agencia.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -3136,7 +3136,31 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 979977679}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: AtivaMov
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 265149449}
+        m_TargetAssemblyTypeName: "Movimenta\xE7\xE3o, Assembly-CSharp"
+        m_MethodName: MudaCena
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &179718663
 GameObject:
   m_ObjectHideFlags: 0
@@ -4241,6 +4265,7 @@ MonoBehaviour:
   Collider: {fileID: 265149451}
   conversa: {fileID: 163825031}
   proxObjetivo: {fileID: 0}
+  tempFade: 0
 --- !u!1 &266940895
 GameObject:
   m_ObjectHideFlags: 0
@@ -7950,6 +7975,7 @@ MonoBehaviour:
   Collider: {fileID: 577254889}
   conversa: {fileID: 1635980584}
   proxObjetivo: {fileID: 1931532630}
+  tempFade: 0.6
 --- !u!212 &577254891
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8149,6 +8175,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &616231420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 616231421}
+  m_Layer: 0
+  m_Name: EntradaMan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &616231421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616231420}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1090390721}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -14293,6 +14350,7 @@ MonoBehaviour:
   Collider: {fileID: 1033402967}
   conversa: {fileID: 1720483522}
   proxObjetivo: {fileID: 0}
+  tempFade: 0
 --- !u!212 &1033402969
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14628,38 +14686,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1895546654}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1108692115
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1108692116}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1108692116
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108692115}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 616231421}
   m_Father: {fileID: 1895546654}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1118824770
@@ -14793,7 +14821,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0
@@ -17408,7 +17436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b50d1b488484421458389980d0a44c6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenaAlvo: {fileID: 331646809}
+  cenaAlvo: {fileID: 765637107}
   cenaAtual: {fileID: 66890419}
   imagem: {fileID: 1870318451}
 --- !u!212 &1330531449
@@ -18586,6 +18614,7 @@ MonoBehaviour:
   Collider: {fileID: 1450793774}
   conversa: {fileID: 1593203656}
   proxObjetivo: {fileID: 0}
+  tempFade: 0
 --- !u!212 &1450793773
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21463,7 +21492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1767848501
 Transform:
   m_ObjectHideFlags: 0
@@ -22051,6 +22080,7 @@ MonoBehaviour:
   Collider: {fileID: 1844330706}
   conversa: {fileID: 68400463}
   proxObjetivo: {fileID: 0}
+  tempFade: 0
 --- !u!61 &1844330706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23108,7 +23138,6 @@ Transform:
   - {fileID: 46586655}
   - {fileID: 2063948396}
   - {fileID: 1090390721}
-  - {fileID: 1108692116}
   m_Father: {fileID: 2033981928}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1910686451
@@ -23444,7 +23473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1923187606
 Transform:
   m_ObjectHideFlags: 0
@@ -23481,7 +23510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1931532631
 Transform:
   m_ObjectHideFlags: 0
@@ -23577,6 +23606,7 @@ MonoBehaviour:
   Collider: {fileID: 1931532632}
   conversa: {fileID: 1858777522}
   proxObjetivo: {fileID: 0}
+  tempFade: 0
 --- !u!1 &1933547227
 GameObject:
   m_ObjectHideFlags: 0
@@ -25678,6 +25708,18 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 979977679}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: AtivaMov
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 265149449}
         m_TargetAssemblyTypeName: "Movimenta\xE7\xE3o, Assembly-CSharp"
         m_MethodName: MudaCena
@@ -26959,6 +27001,7 @@ MonoBehaviour:
   Collider: {fileID: 117048219070525150}
   conversa: {fileID: 1593203656}
   proxObjetivo: {fileID: 0}
+  tempFade: 0
 --- !u!1001 &1462900336921900719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27037,12 +27080,12 @@ PrefabInstance:
       objectReference: {fileID: 85988828}
     - target: {fileID: 3931260452799295770, guid: c244d097298e80e42a6b43e6a4fa813d, type: 3}
       propertyPath: cenas.Array.size
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3931260452799295770, guid: c244d097298e80e42a6b43e6a4fa813d, type: 3}
       propertyPath: cenaInicialCidade
       value: 
-      objectReference: {fileID: 74094796}
+      objectReference: {fileID: 46586654}
     - target: {fileID: 3931260452799295770, guid: c244d097298e80e42a6b43e6a4fa813d, type: 3}
       propertyPath: cenaInicialAgencia
       value: 
@@ -27072,8 +27115,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1608213902}
     - target: {fileID: 3931260452799295770, guid: c244d097298e80e42a6b43e6a4fa813d, type: 3}
+      propertyPath: cenas.Array.data[6]
+      value: 
+      objectReference: {fileID: 1767848500}
+    - target: {fileID: 3931260452799295770, guid: c244d097298e80e42a6b43e6a4fa813d, type: 3}
+      propertyPath: cenas.Array.data[7]
+      value: 
+      objectReference: {fileID: 46586654}
+    - target: {fileID: 3931260452799295770, guid: c244d097298e80e42a6b43e6a4fa813d, type: 3}
+      propertyPath: cenas.Array.data[8]
+      value: 
+      objectReference: {fileID: 2063948395}
+    - target: {fileID: 3931260452799295770, guid: c244d097298e80e42a6b43e6a4fa813d, type: 3}
+      propertyPath: cenas.Array.data[9]
+      value: 
+      objectReference: {fileID: 765637107}
+    - target: {fileID: 3931260452799295770, guid: c244d097298e80e42a6b43e6a4fa813d, type: 3}
       propertyPath: papelTxt.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931260452799295770, guid: c244d097298e80e42a6b43e6a4fa813d, type: 3}
+      propertyPath: cenas.Array.data[10]
+      value: 
+      objectReference: {fileID: 1090390720}
+    - target: {fileID: 3931260452799295770, guid: c244d097298e80e42a6b43e6a4fa813d, type: 3}
+      propertyPath: cenas.Array.data[11]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3931260452799295770, guid: c244d097298e80e42a6b43e6a4fa813d, type: 3}
       propertyPath: papelTxt.Array.data[0]
