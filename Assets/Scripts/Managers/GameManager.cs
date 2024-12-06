@@ -21,8 +21,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] Animator papel;
     [SerializeField] Animator fadeOut;
 
-    [SerializeField] GameObject cenaInicialAgencia;
-    [SerializeField] GameObject cenaInicialCidade;
+    
+    [SerializeField] GameObject[] cenaIniciais;
     [SerializeField] GameObject[] papelTxt;
     //[SerializeField] GameObject proxObjetivo;
 
@@ -45,8 +45,10 @@ public class GameManager : MonoBehaviour
         {
             obj.SetActive(false);
         }
-        cenaInicialAgencia.SetActive(true);
-        cenaInicialCidade.SetActive(true);
+        foreach(GameObject obj in cenaIniciais)
+        {
+            obj.SetActive(true);
+        }
     }
 
     public void AvancaHist()

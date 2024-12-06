@@ -1,0 +1,404 @@
+fileFormatVersion: 2
+guid: 40e3934bfee5d4246af3e01093d5e7f7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: assetscapone_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 182
+        width: 106
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fe9df50d75e6048bba1fcbb53adc6e
+      internalID: -506168037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetscapone_1
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 284
+        width: 76
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e973afb4f719d4e83e7878c73f904f
+      internalID: 631520668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetscapone_2
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 278
+        width: 101
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7521bd07624334ba6fecf7242f1d04
+      internalID: -1107076938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetscapone_3
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 175
+        width: 107
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52017f5627e536f4e97d90cc8dc8b92f
+      internalID: -1324240755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetscapone_4
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 293
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd749742a31acc468fe0a9469a9c0a4
+      internalID: -652761800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetscapone_5
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 243
+        width: 44
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55eb10fcececacf49a93b0211e05a122
+      internalID: -1694426477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetscapone_6
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 255
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf176498aa885e4f861439843ba02d0
+      internalID: -899994173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetscapone_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 249
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a73af4b94d7b294497c5069316c9b63
+      internalID: -1523084774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetscapone_8
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 157
+        width: 160
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0795a99110ad1324d849bb3b5fd935c0
+      internalID: -1841072187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetscapone_9
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 3
+        width: 361
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899706ba0380a2a49877286a9482f76e
+      internalID: -143669468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -267, y: 1}
+      - {x: -316, y: 10}
+      - {x: -310, y: 175}
+      - {x: -208, y: 173}
+      - {x: -208, y: 6}
+    - - {x: -170, y: -34}
+      - {x: -170, y: 64}
+      - {x: 6, y: 64}
+      - {x: 6, y: -34}
+    - - {x: -90, y: 72}
+      - {x: -90, y: 99}
+      - {x: -59, y: 99}
+      - {x: -59, y: 72}
+    - - {x: -109, y: 103}
+      - {x: -109, y: 153}
+      - {x: -30, y: 153}
+      - {x: -30, y: 103}
+    - - {x: 13, y: 66}
+      - {x: 13, y: 87}
+      - {x: 47, y: 87}
+      - {x: 47, y: 66}
+    - - {x: -16, y: 99}
+      - {x: -16, y: 149}
+      - {x: 87, y: 144}
+      - {x: 85, y: 98}
+    - - {x: 178, y: -7}
+      - {x: 178, y: 2}
+      - {x: 142, y: -2}
+      - {x: 96, y: 6}
+      - {x: 99, y: 175}
+      - {x: 205, y: 175}
+      - {x: 205, y: 6}
+    - - {x: 213, y: 108}
+      - {x: 213, y: 129}
+      - {x: 243, y: 129}
+      - {x: 243, y: 108}
+    - - {x: 255, y: 58}
+      - {x: 255, y: 157}
+      - {x: 303, y: 157}
+      - {x: 303, y: 58}
+    - - {x: -54, y: -176}
+      - {x: -54, y: -53}
+      - {x: 312, y: -53}
+      - {x: 310, y: -176}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      assetscapone_0: -506168037
+      assetscapone_1: 631520668
+      assetscapone_2: -1107076938
+      assetscapone_3: -1324240755
+      assetscapone_4: -652761800
+      assetscapone_5: -1694426477
+      assetscapone_6: -899994173
+      assetscapone_7: -1523084774
+      assetscapone_8: -1841072187
+      assetscapone_9: -143669468
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
