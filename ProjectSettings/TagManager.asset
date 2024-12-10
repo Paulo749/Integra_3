@@ -12,6 +12,7 @@ TagManager:
   - Errada
   - Papel
   - "Come\xE7aQuiz"
+  - Sair
   layers:
   - Default
   - TransparentFX

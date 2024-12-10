@@ -41,14 +41,14 @@ public class GameManager : MonoBehaviour
         instance = this;
         historia = 0;
         
-        foreach (GameObject obj in cenas)
+        /*foreach (GameObject obj in cenas)
         {
             obj.SetActive(false);
         }
         foreach(GameObject obj in cenaIniciais)
         {
             obj.SetActive(true);
-        }
+        }*/
     }
 
     public void AvancaHist()

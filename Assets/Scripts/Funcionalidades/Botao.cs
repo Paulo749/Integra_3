@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.UIElements;
+using DialogueEditor;
+
 
 public class Botao : MonoBehaviour
 {
     [SerializeField] GameObject obj;
     [SerializeField] GameObject liberar;
     [SerializeField] Animator anim;
+    [SerializeField] NPCConversation conversa;
     
 
     
@@ -21,13 +24,20 @@ public class Botao : MonoBehaviour
             {
                 obj.SetActive(true);
                 gameObject.SetActive(false);
+                ConversationManager.Instance.StartConversation(conversa);
+                GameManager.instance.podeMover = false;
+                GameManager.instance.conversaAtiva = true;
 
             }
             else if (gameObject.CompareTag("Objetivo"))
             {
-                obj.SetActive(false);
-                liberar.SetActive(true);
-                anim.SetTrigger("Glow");
+                if(GameManager.instance.podeMover == true && GameManager.instance.conversaAtiva == false)
+                {
+                    obj.SetActive(false);
+                    liberar.SetActive(true);
+                    anim.SetTrigger("Glow");
+                }
+                
                 
             }
             else if (gameObject.CompareTag("Certa"))
@@ -43,6 +53,10 @@ public class Botao : MonoBehaviour
             {
                 gameObject.SetActive(false);
                 Questoes.instance.ComeçaQuiz();
+            }
+            else if (gameObject.CompareTag("Sair"))
+            {
+                Application.Quit();
             }
             else if (!gameObject.CompareTag("Certa"))
             {

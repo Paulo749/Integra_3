@@ -11,6 +11,7 @@ public class Efeitos : MonoBehaviour
     private void Start()
     {
         Fora();
+        DesativaContraste();
     }
 
     private void OnMouseOver()

@@ -7,7 +7,7 @@ public class Questoes : MonoBehaviour
     [SerializeField] protected int acertos;
     //[SerializeField] protected int
     [SerializeField] GameObject[] questoes;
-    protected int questaoAtual;
+    [SerializeField]protected int questaoAtual;
     [SerializeField] protected GameObject telaVitoria;
     [SerializeField] protected GameObject telaPerda;
     
@@ -59,7 +59,7 @@ public class Questoes : MonoBehaviour
 
     public void MudaQuestao()
     {
-        if (questaoAtual == 9)
+        if (questaoAtual + 1 == questoes.Length)
         {
             VerificaAcertos();
             questoes[questaoAtual].SetActive(false);
