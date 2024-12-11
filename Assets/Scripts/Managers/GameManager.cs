@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     protected GameObject cenaAtual;
     public bool podeMover;
     public bool conversaAtiva;
+    [SerializeField] protected GameObject telaGameOver;
+    
 
     public int historia;
 
@@ -30,6 +32,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
 
+    
     public void AtivaMov()
     {
         conversaAtiva = false;
@@ -41,14 +44,14 @@ public class GameManager : MonoBehaviour
         instance = this;
         historia = 0;
         
-        /*foreach (GameObject obj in cenas)
+      foreach (GameObject obj in cenas)
         {
             obj.SetActive(false);
         }
         foreach(GameObject obj in cenaIniciais)
         {
             obj.SetActive(true);
-        }*/
+        } 
     }
 
     public void AvancaHist()
@@ -174,5 +177,21 @@ public class GameManager : MonoBehaviour
     }
 
     
-
+   public void GameOver()
+   {
+       telaGameOver.SetActive(true);
+   }
+   public void StartGame()
+   {
+        historia = 0;
+        
+        foreach (GameObject obj in cenas)
+        {
+            obj.SetActive(false);
+        }
+        foreach(GameObject obj in cenaIniciais)
+        {
+            obj.SetActive(true);
+        }
+   }
 }

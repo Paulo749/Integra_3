@@ -62,7 +62,10 @@ public class Botao : MonoBehaviour
             {
                 Questoes.instance.MudaQuestao();
             }
-
+            else if (gameObject.CompareTag("Start"))
+            {
+                GameManager.instance.StartGame();
+            }
             
         }
         

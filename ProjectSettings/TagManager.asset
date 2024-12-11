@@ -13,6 +13,7 @@ TagManager:
   - Papel
   - "Come\xE7aQuiz"
   - Sair
+  - Start
   layers:
   - Default
   - TransparentFX

@@ -94,6 +94,10 @@ public class NPC : MonoBehaviour
     } 
 
     
+    public void DesativaProxObjetivo()
+    {
+        proxObjetivo.SetActive(false);
+    }
 
    
 
