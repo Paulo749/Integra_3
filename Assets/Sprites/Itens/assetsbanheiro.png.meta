@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 613c46b8f755d9a41a43deebe7adce58
+guid: d3803de2150bdd845b0f1ed38a4d69d1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,76 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: decor_0
+      name: assetsbanheiro_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 241
+        x: 256
+        y: 144
+        width: 139
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbaef5a1e20e194190854845a2a71e8
+      internalID: 503121980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetsbanheiro_1
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 132
+        width: 77
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c9d946e456ea8498d58c65b21d0c39
+      internalID: -1618085459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetsbanheiro_2
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 177
+        width: 30
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70cdc84478f08a745ba527ffdda82d96
+      internalID: -340020968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetsbanheiro_3
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 53
         width: 89
-        height: 93
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,50 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 183bac0a53cfeb9498f0105c04953e19
-      internalID: 1566392029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decor_1
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 70
-        width: 344
-        height: 186
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 141a420e8111cc6479efd323b42bcbdf
-      internalID: 112911685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decor_2
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 207
-        width: 41
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f797c9ebff108aa4dbac0e35b0246e6a
-      internalID: 743096614
+      spriteID: 8f8fa1cbc1efee1448367db51dbda2b1
+      internalID: 1099814049
       vertices: []
       indices: 
       edges: []
@@ -196,9 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      decor_0: 1566392029
-      decor_1: 112911685
-      decor_2: 743096614
+      assetsbanheiro_0: 503121980
+      assetsbanheiro_1: -1618085459
+      assetsbanheiro_2: -340020968
+      assetsbanheiro_3: 1099814049
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

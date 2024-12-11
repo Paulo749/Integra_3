@@ -14,6 +14,7 @@ public class Item : MonoBehaviour
 
         AH();
 
+
     }
 
     void AH()
@@ -21,9 +22,13 @@ public class Item : MonoBehaviour
         if(gameObject.transform.position.y < -4.0f)
         {
             gameObject.SetActive(false);
-            Construtor.instanceCons.desativadas++;
+            if (gameObject.CompareTag("Destroi"))
+            {
+                 Construtor.instanceCons.desativadas++;
+                 Construtor.instanceCons.VerificaFilhos();
+
+            }
             SoundManager.instance.pegandoObj.Play();
-            Construtor.instanceCons.VerificaFilhos();
         }
     }
 
