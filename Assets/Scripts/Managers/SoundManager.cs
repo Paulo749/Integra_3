@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource pegandoObj;
     public AudioSource zaWarudo;
     public AudioSource tiro;
+    public AudioSource Background;
     
 
 
