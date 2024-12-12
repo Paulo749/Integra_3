@@ -16,12 +16,15 @@ public class GameManager : MonoBehaviour
     public bool podeMover;
     public bool conversaAtiva;
     [SerializeField] protected GameObject telaGameOver;
+    [SerializeField] protected bool gameIniciado;
     
 
     public int historia;
 
     [SerializeField] Animator papel;
     [SerializeField] Animator fadeOut;
+    [SerializeField] Animator antes;
+    [SerializeField] SpriteRenderer antesNaMao;
 
     
     [SerializeField] GameObject[] cenaIniciais;
@@ -43,7 +46,10 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
         historia = 0;
-        
+        gameIniciado = false;
+        antesNaMao.enabled = false;
+
+
         foreach (GameObject obj in cenas)
         {
             obj.SetActive(false);
@@ -102,12 +108,16 @@ public class GameManager : MonoBehaviour
     public void LevantaPapel()
     {
         papel.SetTrigger("Ativar");
+        GameManager.instance.podeMover = false;
+        GameManager.instance.conversaAtiva = true;
         //papel.SetBool("Levantado", true);
     }
 
     public void AbaixaPapel()
     {
         papel.SetTrigger("Desativar");
+        GameManager.instance.podeMover = true;
+        GameManager.instance.conversaAtiva = false;
         //papel.SetBool("Levantado", false);
     }
 
@@ -119,6 +129,17 @@ public class GameManager : MonoBehaviour
     public void FadeLongo()
     {
         fadeOut.SetTrigger("FadeLongo");
+    }
+
+    public void AtivandoAntes()
+    {
+        antesNaMao.enabled = true;
+        antes.SetTrigger("Ativando");
+    }
+
+    public void DesativaAntes()
+    {
+        antesNaMao.enabled = false;
     }
 
     #endregion
@@ -189,7 +210,8 @@ public class GameManager : MonoBehaviour
    public void StartGame()
    {
         historia = 0;
-        
+        gameIniciado = false;
+
         foreach (GameObject obj in cenas)
         {
             obj.SetActive(false);

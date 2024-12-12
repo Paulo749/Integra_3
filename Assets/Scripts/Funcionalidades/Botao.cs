@@ -48,6 +48,7 @@ public class Botao : MonoBehaviour
             else if (gameObject.CompareTag("Papel"))
             {
                 GameManager.instance.AbaixaPapel();
+                
             }
             else if (gameObject.CompareTag("ComeçaQuiz"))
             {

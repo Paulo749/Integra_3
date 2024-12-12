@@ -18,11 +18,7 @@ public class NPC : MonoBehaviour
     [SerializeField] protected float tempFade;
 
 
-    private void Awake()
-    {
-        proxObjetivo.SetActive(false);
-        proxObjetivo2.SetActive(false);
-    }
+    
 
     private void Start()
     {

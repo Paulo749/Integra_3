@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 036c6cb8793917f4fa0e18778dddc5f6
+guid: ff6a8ec48afa26f4cab8c13486f8f599
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: relogio_0
+      name: receitafederalcaidebocanomeu_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 370
-        width: 195
-        height: 202
+        x: 187
+        y: 231
+        width: 73
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b3a740f1106ade4b9403782e51c8cb7
-      internalID: 1328727457
+      spriteID: fa726538a1b5c8844953b42f39bc77c3
+      internalID: -38527122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: relogio_1
+      name: receitafederalcaidebocanomeu_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 100
-        width: 195
-        height: 181
+        x: 344
+        y: 136
+        width: 142
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 990b396d54776af4baccdb52ece56e9b
-      internalID: 1634583009
+      spriteID: 32746ae9e6cd86b49bbaf91886dc51f2
+      internalID: 1338041940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: receitafederalcaidebocanomeu_2
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 73
+        width: 62
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307ecfa17419c2947999e4e30775827e
+      internalID: 1804423291
       vertices: []
       indices: 
       edges: []
@@ -149,8 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      relogio_0: 1328727457
-      relogio_1: 1634583009
+      receitafederalcaidebocanomeu_0: -38527122
+      receitafederalcaidebocanomeu_1: 1338041940
+      receitafederalcaidebocanomeu_2: 1804423291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

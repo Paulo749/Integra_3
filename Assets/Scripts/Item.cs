@@ -10,9 +10,13 @@ public class Item : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        transform.position = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (!GameManager.instance.conversaAtiva)
+        {
+            transform.position = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        AH();
+            AH();
+        }
+       
 
 
     }
@@ -27,8 +31,8 @@ public class Item : MonoBehaviour
                  Construtor.instanceCons.desativadas++;
                  Construtor.instanceCons.VerificaFilhos();
 
+                 SoundManager.instance.pegandoObj.Play();
             }
-            SoundManager.instance.pegandoObj.Play();
         }
     }
 

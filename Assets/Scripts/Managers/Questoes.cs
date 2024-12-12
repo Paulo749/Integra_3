@@ -10,6 +10,7 @@ public class Questoes : MonoBehaviour
     [SerializeField]protected int questaoAtual;
     [SerializeField] protected GameObject telaVitoria;
     [SerializeField] protected GameObject telaPerda;
+    [SerializeField] protected GameObject botaoInicia;
     
 
     public static Questoes instance;
@@ -33,8 +34,22 @@ public class Questoes : MonoBehaviour
        
     }
 
+    public void ReiniciaQuiz()
+    {
+        foreach (GameObject obj in questoes)
+        {
+            obj.SetActive(false);
+        }
+        acertos = 0;
+        telaVitoria.SetActive(false);
+        telaPerda.SetActive(false);
+        questaoAtual = 0;
+        botaoInicia.SetActive(true);
+    }
+
     public void ComeçaQuiz()
     {
+       
         questoes[questaoAtual].SetActive(true);
     }
 
@@ -47,7 +62,7 @@ public class Questoes : MonoBehaviour
         else
         {
             telaPerda.SetActive(true);
-            SoundManager.instance.zaWarudo.Play();
+            
         }
     }
 

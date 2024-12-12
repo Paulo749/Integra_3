@@ -7,6 +7,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource papel;
     public AudioSource pegandoObj;
     public AudioSource zaWarudo;
+    public AudioSource tiro;
     
 
 
@@ -19,9 +20,15 @@ public class SoundManager : MonoBehaviour
         
     }
 
+    public void PlayZawarudo()
+    {
+        zaWarudo.Play();
+    }
 
-
-
+    public void Tiro()
+    {
+        tiro.Play();
+    }
 
 
 
