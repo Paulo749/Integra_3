@@ -13,8 +13,16 @@ public class NPC : MonoBehaviour
     public Collider2D Collider;
     [SerializeField]protected GameObject conversa;
     [SerializeField] protected GameObject proxObjetivo;
+    [SerializeField] protected GameObject proxObjetivo2;
+    [SerializeField] protected GameObject proxObjetivo3;
     [SerializeField] protected float tempFade;
 
+
+    private void Awake()
+    {
+        proxObjetivo.SetActive(false);
+        proxObjetivo2.SetActive(false);
+    }
 
     private void Start()
     {
@@ -34,7 +42,15 @@ public class NPC : MonoBehaviour
         proxObjetivo.SetActive(true);
     }
 
-    
+    public void AtivaProxObjetivo2()
+    {
+        proxObjetivo2.SetActive(true);
+    }
+
+    public void AtivaProxObjetivo3()
+    {
+        proxObjetivo3.SetActive(true);
+    }
 
 
     public void AtivaSumir()
@@ -53,26 +69,7 @@ public class NPC : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0) && GameManager.instance.conversaAtiva == false)
             {
-                //ConversationManager.Instance.StartConversation(minhaConversa);
-                switch (GameManager.instance.historia)
-                {
-                    case 0:
-                        ConversationManager.Instance.StartConversation(minhaConversa);
-                        break;
-                    case 1:
-                        ConversationManager.Instance.StartConversation(minhaConversa2);
-                        break;
-                  /*case 2:
-                        ConversationManager.Instance.StartConversation(minhaConversa2);
-                        break;
-                    default:                                    
-                        ConversationManager.Instance.StartConversation(minhaConversaDefault);              
-                        break;*/
-                }
-
-                Collider.enabled = false;
-                GameManager.instance.podeMover = false;
-                GameManager.instance.conversaAtiva = true;
+                IniciaConversa();
 
                 
             }
@@ -83,7 +80,29 @@ public class NPC : MonoBehaviour
 
     }
 
-    
+    public void IniciaConversa()
+    {
+        //ConversationManager.Instance.StartConversation(minhaConversa);
+        switch (GameManager.instance.historia)
+        {
+            case 0:
+                ConversationManager.Instance.StartConversation(minhaConversa);
+                break;
+            case 1:
+                ConversationManager.Instance.StartConversation(minhaConversa2);
+                break;
+                /*case 2:
+                      ConversationManager.Instance.StartConversation(minhaConversa2);
+                      break;
+                  default:                                    
+                      ConversationManager.Instance.StartConversation(minhaConversaDefault);              
+                      break;*/
+        }
+
+        Collider.enabled = false;
+        GameManager.instance.podeMover = false;
+        GameManager.instance.conversaAtiva = true;
+    }
 
     public void LigaHitBox()
     {
@@ -99,7 +118,17 @@ public class NPC : MonoBehaviour
         proxObjetivo.SetActive(false);
     }
 
-   
+    public void DesativaProxObjetivo2()
+    {
+        proxObjetivo2.SetActive(false);
+    }
+
+    public void DesativaProxObjetivo3()
+    {
+        proxObjetivo3.SetActive(false);
+    }
+
+
 
 
 
